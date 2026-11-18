@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101d39">
+<title>NMMS MASTER</title>
+<style>
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101d39;
+  color: white;
+}
+header {
+  padding: 24px 18px;
+  background: #192d50;
+  border-radius: 0 0 24px 24px;
+}
+header h1 { margin: 0; font-size: 27px; }
+header p { color: #c4d4ee; }
+.welcome {
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 18px;
+  background: #29466f;
+}
+h2 { font-size: 19px; }
+main { padding: 18px; }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+.card {
+  background: #20385d;
+  padding: 20px 12px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #385579;
+  cursor: pointer;
+}
+.card .emoji { font-size: 30px; }
+.card h3 { font-size: 15px; }
+.card p { font-size: 12px; color: #c4d4ee; }
+.card:active { background: #355887; }
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #b8c9e8;
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🎓 NMMS MASTER</h1>
+  <p>தமிழில் கற்றல் • பயிற்சி • வெற்றி</p>
+  <div class="welcome">
+    <h2>வணக்கம் மாணவர்களே! 👋</h2>
+    <p>உங்கள் NMMS வெற்றிப் பயணம் இங்கே தொடங்குகிறது.</p>
+  </div>
+</header>
+
+<main>
+  <h2>📚 கற்றல் பிரிவுகள்</h2>
+  <div class="grid">
+    <div class="card" onclick="show('படிப்புப் பாடங்கள்')">
+      <div class="emoji">📚</div>
+      <h3>படிப்புப் பாடங்கள்</h3>
+      <p>பாட வாரியான குறிப்புகள்</p>
+    </div>
+    <div class="card" onclick="show('Flashcards')">
+      <div class="emoji">🃏</div>
+      <h3>Flashcards</h3>
+      <p>வினா மற்றும் விடைகள்</p>
+    </div>
+    <div class="card" onclick="show('பயிற்சித்தாள்கள்')">
+      <div class="emoji">📝</div>
+      <h3>பயிற்சித்தாள்கள்</h3>
+      <p>நேரடி ஆன்லைன் பயிற்சி</p>
+    </div>
+    <div class="card" onclick="show('மாதிரித் தேர்வுகள்')">
+      <div class="emoji">⏱️</div>
+      <h3>மாதிரித் தேர்வுகள்</h3>
+      <p>NMMS தேர்வுப் பயிற்சி</p>
+    </div>
+    <div class="card" onclick="show('தினசரி வினாடி வினா')">
+      <div class="emoji">🧠</div>
+      <h3>தினசரி Quiz</h3>
+      <p>உங்கள் அறிவைச் சோதிக்கவும்</p>
+    </div>
+    <div class="card" onclick="show('மாணவர் முன்னேற்றம்')">
+      <div class="emoji">🏆</div>
+      <h3>முன்னேற்றம்</h3>
+      <p>உங்கள் மதிப்பெண்கள்</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  NMMS MASTER © 2026<br>
+  கற்றுக்கொள் • பயிற்சி செய் • வெற்றி பெறு
+</footer>
+
+<script>
+function show(section) {
+  alert(section + " விரைவில் கிடைக்கும்!");
+}
+</script>
+
+</body>
+</html>
